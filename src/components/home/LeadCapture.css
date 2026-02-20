@@ -1,0 +1,157 @@
+.lead-capture-section {
+    background: linear-gradient(135deg, var(--color-bg-dark) 0%, rgba(239, 68, 68, 0.1) 100%);
+    position: relative;
+}
+
+.lead-capture-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .lead-capture-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+}
+
+.lc-title {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.lc-subtitle {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.lc-benefits {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.lc-benefits li {
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text-light);
+}
+
+.lc-form-container {
+    background-color: var(--color-card-bg);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(239, 68, 68, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.form-title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-muted);
+}
+
+.form-input {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(15, 23, 42, 0.5);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    color: var(--color-text-light);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    transition: all var(--transition-fast);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+}
+
+.form-input::placeholder {
+    color: #64748b;
+}
+
+.form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23cbd5e1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.2rem;
+    padding-right: 2.5rem;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.form-error {
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.form-disclaimer {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.lc-success-message {
+    text-align: center;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 350px;
+}
+
+.lc-success-message h3 {
+    color: #10b981;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.lc-success-message p {
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
