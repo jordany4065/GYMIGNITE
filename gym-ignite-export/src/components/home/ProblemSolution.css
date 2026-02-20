@@ -1,0 +1,105 @@
+.problem-solution-section {
+    background-color: var(--color-bg-darker);
+    position: relative;
+}
+
+.section-header {
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    max-width: 800px;
+    margin: 0 auto 1rem;
+}
+
+.section-subtitle {
+    color: var(--color-text-muted);
+    font-size: 1.125rem;
+}
+
+.ps-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .ps-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.ps-card {
+    background-color: var(--color-card-bg);
+    border-radius: var(--radius-lg);
+    padding: 3rem 2rem;
+    border: 1px solid var(--color-border);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.ps-card:hover {
+    transform: translateY(-5px);
+}
+
+.ps-problem {
+    opacity: 0.8;
+}
+
+.ps-solution {
+    position: relative;
+    background: linear-gradient(145deg, var(--color-card-bg) 0%, rgba(239, 68, 68, 0.05) 100%);
+    border-color: rgba(239, 68, 68, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.ps-solution::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    border-top-left-radius: var(--radius-lg);
+    border-top-right-radius: var(--radius-lg);
+}
+
+.ps-card-title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.ps-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.ps-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 1.05rem;
+    line-height: 1.4;
+}
+
+.ps-icon {
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+}
+
+.icon-red {
+    color: var(--color-text-muted);
+}
+
+.icon-green {
+    color: #10b981;
+    /* Emerald green for success */
+}
