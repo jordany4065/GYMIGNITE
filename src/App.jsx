@@ -8,6 +8,7 @@ import Testimonials from './components/home/Testimonials';
 import Pricing from './components/home/Pricing';
 import LeadCapture from './components/home/LeadCapture';
 import FAQ from './components/home/FAQ';
+import Contact from './components/home/Contact';
 import Footer from './components/layout/Footer';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Testimonials />
         <Pricing />
         <LeadCapture />
+        <Contact />
         <FAQ />
       </main>
       <Footer />
